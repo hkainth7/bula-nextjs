@@ -26,7 +26,7 @@ const CarouselCard = (props: CarouselCardProps) => {
 			>
 				<Image src={src} height={225} width={0} alt={`${title} hookah`} />
 				<Box sx={{ padding: "0px 14px" }}>
-					<Typography variant="body2" color={"green"}>
+					<Typography variant="body2" color={"white"}>
 						{description}
 					</Typography>
 				</Box>
