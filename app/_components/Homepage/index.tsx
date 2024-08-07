@@ -27,9 +27,8 @@ const Homepage = () => {
 				sx={{ marginY: "20px", fontWeight: "light" }}
 			>
 				Experience the ultimate hookah lounge vibe in our inviting space. Dive
-				into the finest flavors, unwind from work, and relax in our cozy
-				seating. It is the perfect place to hang out and have a great time with
-				friends.
+				into the finest flavors, unwind from work, and enjoy in our relaxed
+				environment. It is the perfect place to for a night out.
 			</Typography>
 			<EmblaCarousel options={OPTIONS} />
 		</Stack>
