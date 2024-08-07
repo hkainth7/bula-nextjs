@@ -28,7 +28,7 @@ const Homepage = () => {
 			>
 				Experience the ultimate hookah lounge vibe in our inviting space. Dive
 				into the finest flavors, unwind from work, and enjoy in our relaxed
-				environment. It is the perfect place to for a night out.
+				environment. It is the perfect place for a night out.
 			</Typography>
 			<EmblaCarousel options={OPTIONS} />
 		</Stack>
