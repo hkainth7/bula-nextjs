@@ -28,7 +28,7 @@ const Homepage = () => {
 			>
 				Experience the ultimate hookah lounge vibe in our inviting space. Dive
 				into the finest flavors, unwind from work, and relax in our cozy
-				seating. It's the perfect place to hang out and have a great time with
+				seating. It is the perfect place to hang out and have a great time with
 				friends.
 			</Typography>
 			<EmblaCarousel options={OPTIONS} />
