@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { Button, Link, Menu, MenuItem, styled } from "@mui/material";
 import Image from "next/image";
@@ -58,8 +56,8 @@ const MenuNav = () => {
 					horizontal: "right",
 				}}
 			>
-				{linkData.map(({ href, title }) => (
-					<CustomMenuItem divider onClick={handleClose}>
+				{linkData.map(({ href, title }, index) => (
+					<CustomMenuItem key={index} divider onClick={handleClose}>
 						<Link href={href}>{title}</Link>
 					</CustomMenuItem>
 				))}
