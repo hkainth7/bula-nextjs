@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Button, IconButton, Link, Menu, MenuItem } from "@mui/material";
+import { Button, Link, Menu, MenuItem, styled } from "@mui/material";
 import Image from "next/image";
 import HookahIcon from "@/public/assets/hookah-2.png";
+import { linkData } from "./linkData";
 
 const MenuNav = () => {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -12,6 +13,14 @@ const MenuNav = () => {
 	const handleClose = () => {
 		setAnchorEl(null);
 	};
+
+	const CustomMenuItem = styled(MenuItem)({
+		"& a": {
+			textDecoration: "none",
+			color: "white",
+		},
+	});
+
 	return (
 		<nav>
 			<Button
@@ -20,6 +29,7 @@ const MenuNav = () => {
 				aria-haspopup="true"
 				aria-expanded={open ? "true" : undefined}
 				onClick={handleClick}
+				sx={{ padding: 0 }}
 			>
 				<Image src={HookahIcon} height={32} width={0} alt={`hookah`} />
 			</Button>
@@ -31,16 +41,26 @@ const MenuNav = () => {
 				MenuListProps={{
 					"aria-labelledby": "basic-button",
 				}}
+				sx={{
+					"& .MuiList-root": {
+						backgroundColor: "#222831",
+						padding: 0,
+					},
+				}}
+				anchorOrigin={{
+					vertical: "bottom",
+					horizontal: "right",
+				}}
+				transformOrigin={{
+					vertical: "top",
+					horizontal: "right",
+				}}
 			>
-				<MenuItem onClick={handleClose}>
-					<Link href="/">Home</Link>
-				</MenuItem>
-				<MenuItem onClick={handleClose}>
-					<Link href="/About">About</Link>
-				</MenuItem>
-				<MenuItem onClick={handleClose}>
-					<Link href="ContactUs">Contact</Link>
-				</MenuItem>
+				{linkData.map(({ href, title }) => (
+					<CustomMenuItem divider onClick={handleClose}>
+						<Link href={href}>{title}</Link>
+					</CustomMenuItem>
+				))}
 			</Menu>
 		</nav>
 	);
