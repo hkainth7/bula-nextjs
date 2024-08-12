@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { Button, Link, Menu, MenuItem, styled } from "@mui/material";
 import Image from "next/image";
