@@ -3,6 +3,7 @@ import React from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import EmblaCarousel from "../EmblaCarousel";
 import { Stack, Typography } from "@mui/material";
+import SiteMap from "../SiteMap";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -31,6 +32,7 @@ const Homepage = () => {
 				environment. It is the perfect place for a night out.
 			</Typography>
 			<EmblaCarousel options={OPTIONS} />
+			<SiteMap />
 		</Stack>
 	);
 };
