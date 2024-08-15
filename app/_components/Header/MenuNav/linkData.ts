@@ -6,6 +6,10 @@ export const linkData: LinkData[] = [
 		title: "Home",
 	},
 	{
+		href: "/Contact",
+		title: "Catering",
+	},
+	{
 		href: "/About",
 		title: "About",
 	},

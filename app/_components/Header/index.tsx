@@ -40,6 +40,7 @@ const Header = () => {
 				{isSmallUp ? (
 					<nav>
 						<Link href="/">Home</Link>
+						<Link href="ContactUs">Catering</Link>
 						<Link href="/About">About</Link>
 						<Link href="ContactUs">Contact</Link>
 					</nav>
