@@ -5,7 +5,7 @@ import Image from "next/image";
 import BulaLogo from "@/public/assets/white-logo.png";
 import GreenSmoke from "@/public/assets/green-smoke.webp";
 import Link from "next/link";
-import { Box, Stack, styled, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Stack, useMediaQuery, useTheme } from "@mui/material";
 import MenuNav from "./MenuNav";
 
 const Header = () => {

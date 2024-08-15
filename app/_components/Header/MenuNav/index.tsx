@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Link, Menu, MenuItem, styled } from "@mui/material";
 import Image from "next/image";
-import HookahIcon from "@/public/assets/hookah-2.png";
+import HookahIcon from "@/public/assets/shishaOriginal.png";
 import { linkData } from "./linkData";
 
 const MenuNav = () => {
@@ -31,7 +31,13 @@ const MenuNav = () => {
 				onClick={handleClick}
 				sx={{ padding: 0 }}
 			>
-				<Image src={HookahIcon} height={32} width={0} alt={`hookah`} />
+				<Image
+					src={HookahIcon}
+					quality={100}
+					height={60}
+					width={0}
+					alt={`hookah`}
+				/>
 			</Button>
 			<Menu
 				id="basic-menu"
