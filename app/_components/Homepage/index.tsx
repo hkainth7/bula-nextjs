@@ -1,9 +1,10 @@
 import React from "react";
-
+import Image from "next/image";
 import { EmblaOptionsType } from "embla-carousel";
 import EmblaCarousel from "../EmblaCarousel";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import SiteMap from "../SiteMap";
+import GreenSmoke from "@/public/assets/green-marble.png";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -31,6 +32,26 @@ const Homepage = () => {
 				into the finest flavors, unwind from work, and enjoy in our relaxed
 				environment. It is the perfect place for a night out.
 			</Typography>
+			{/* <Box
+				sx={{
+					position: "absolute",
+					top: 0,
+					left: 0,
+					width: "100%",
+					height: "100%",
+					zIndex: -1,
+					opacity: 0.5,
+				}}
+			>
+				<Image
+					src={GreenSmoke}
+					alt="header background"
+					layout="fill"
+					objectFit="cover"
+					quality={100}
+					priority={true}
+				/>
+			</Box> */}
 			<EmblaCarousel options={OPTIONS} />
 			<SiteMap />
 		</Stack>
