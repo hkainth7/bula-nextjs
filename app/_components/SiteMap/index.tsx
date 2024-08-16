@@ -59,15 +59,15 @@ const SiteMap = () => {
 					<CustomTypography>Business Info:</CustomTypography>
 					<Stack gap={2} sx={{ marginLeft: "10px" }}>
 						<Stack direction="row">
-							<MailOutlineIcon sx={{ marginRight: "4px" }} />
+							<MailOutlineIcon sx={{ marginRight: "8px" }} />
 							<Typography>bulalounge@gmail.ca</Typography>
 						</Stack>
 						<Stack direction="row">
-							<LocalPhoneOutlinedIcon sx={{ marginRight: "4px" }} />
+							<LocalPhoneOutlinedIcon sx={{ marginRight: "8px" }} />
 							<Typography>236-558-3099</Typography>
 						</Stack>
 						<Stack direction="row">
-							<LocationOnOutlinedIcon sx={{ marginRight: "4px" }} />
+							<LocationOnOutlinedIcon sx={{ marginRight: "8px" }} />
 							<Typography>4027 Hastings St, Burnaby</Typography>
 						</Stack>
 					</Stack>

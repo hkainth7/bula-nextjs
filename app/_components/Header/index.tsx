@@ -29,10 +29,10 @@ const Header = () => {
 					<Image
 						src={GreenSmoke}
 						alt="header background"
-						layout="fill"
-						objectFit="cover"
+						fill
 						quality={100}
 						priority={true}
+						style={{ objectFit: "cover" }}
 						className="flipped"
 					/>
 				</Box>
@@ -40,9 +40,9 @@ const Header = () => {
 				{isSmallUp ? (
 					<nav>
 						<Link href="/">Home</Link>
-						<Link href="ContactUs">Catering</Link>
+						<Link href="Contact">Catering</Link>
 						<Link href="/About">About</Link>
-						<Link href="ContactUs">Contact</Link>
+						<Link href="Contact">Contact</Link>
 					</nav>
 				) : (
 					<MenuNav />
