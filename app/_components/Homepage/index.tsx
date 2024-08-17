@@ -16,7 +16,8 @@ const Homepage = () => {
 			<Stack
 				direction={isLargeUp ? "row" : "column"}
 				alignItems={isLargeUp ? "center" : "center"}
-				padding={2}
+				padding={5}
+				paddingX={4}
 			>
 				<Stack alignItems="center">
 					<Typography

@@ -31,8 +31,7 @@ const SiteMap = () => {
 			sx={{
 				marginTop: "10px",
 				borderTop: "2px solid #497445",
-				paddingY: "20px",
-				paddingX: "10px",
+				padding: "20px",
 			}}
 		>
 			<Stack

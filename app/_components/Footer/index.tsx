@@ -15,10 +15,10 @@ const Footer = () => {
 	return (
 		<footer>
 			<Stack
-				direction="row"
+				direction="column"
 				alignItems="center"
 				justifyContent="center"
-				gap={2}
+				gap={1}
 			>
 				<Typography
 					sx={{
