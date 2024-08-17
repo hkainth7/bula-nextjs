@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import BulaLogo from "@/public/assets/white-logo.png";
-import GreenSmoke from "@/public/assets/green-smoke.webp";
+import GreenSmoke from "@/public/assets/green-smoke-2.jpg";
 import Link from "next/link";
 import { Box, Stack, useMediaQuery, useTheme } from "@mui/material";
 import MenuNav from "./MenuNav";

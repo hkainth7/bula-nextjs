@@ -9,7 +9,6 @@ import {
 import useEmblaCarousel from "embla-carousel-react";
 import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
 import { hookayTypeData } from "@/app/hookahTypeData";
-
 import "@/app/_components/EmblaCarousel/styles.css";
 import CarouselCard from "../CarouselCard";
 
