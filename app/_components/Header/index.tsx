@@ -36,7 +36,9 @@ const Header = () => {
 						className="flipped"
 					/>
 				</Box>
-				<Image src={BulaLogo} height={90} width={90} alt="Bula lounge logo" />
+				<Link href="/">
+					<Image src={BulaLogo} height={90} width={90} alt="Bula lounge logo" />
+				</Link>
 				{isSmallUp ? (
 					<nav>
 						<Link href="/">Home</Link>
