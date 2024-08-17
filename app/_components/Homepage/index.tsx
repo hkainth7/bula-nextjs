@@ -15,17 +15,18 @@ const Homepage = () => {
 		<Stack>
 			<Stack
 				direction={isLargeUp ? "row" : "column"}
-				alignItems={isLargeUp ? "center" : ""}
+				alignItems={isLargeUp ? "center" : "center"}
+				padding={2}
 			>
-				<Box>
+				<Stack alignItems="center">
 					<Typography
 						variant="h1"
+						textAlign="center"
 						sx={{
 							fontSize: "40px",
 							marginY: "10px",
 							fontWeight: "bold",
 							padding: "4px",
-							textAlign: "center",
 						}}
 					>
 						Welcome to <span style={{ color: "#497445" }}>Bula Hookah</span>{" "}
@@ -34,13 +35,18 @@ const Homepage = () => {
 					<Typography
 						variant="h6"
 						textAlign={"center"}
-						sx={{ marginY: "20px", fontWeight: "light", paddingX: "12px" }}
+						sx={{
+							marginY: "20px",
+							fontWeight: "light",
+							paddingX: "12px",
+							maxWidth: "600px",
+						}}
 					>
 						Experience the ultimate hookah lounge vibe in our inviting space.
 						Dive into the finest flavors, unwind from work, and enjoy in our
 						relaxed environment. It is the perfect place for a night out.
 					</Typography>
-				</Box>
+				</Stack>
 				<EmblaCarousel options={OPTIONS} />
 			</Stack>
 			<SiteMap />

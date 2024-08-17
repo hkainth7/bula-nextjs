@@ -49,7 +49,7 @@ const MenuNav = () => {
 				}}
 				sx={{
 					"& .MuiList-root": {
-						backgroundColor: "#222831",
+						backgroundColor: "#2F3135",
 						padding: 0,
 					},
 				}}
