@@ -13,12 +13,7 @@ const Homepage = () => {
 	const isLargeUp = useMediaQuery(theme.breakpoints.up("lg"));
 	return (
 		<Stack>
-			<Stack
-				direction={isLargeUp ? "row" : "column"}
-				alignItems={isLargeUp ? "center" : "center"}
-				padding={5}
-				paddingX={4}
-			>
+			<Stack padding={5} paddingX={4}>
 				<Stack alignItems="center">
 					<Typography
 						variant="h1"
