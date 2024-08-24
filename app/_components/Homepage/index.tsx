@@ -10,7 +10,6 @@ const OPTIONS: EmblaOptionsType = { loop: true };
 
 const Homepage = () => {
 	const theme = useTheme();
-	const isLargeUp = useMediaQuery(theme.breakpoints.up("lg"));
 	return (
 		<Stack>
 			<Stack padding={5} paddingX={4}>
