@@ -3,8 +3,9 @@
 import React from "react";
 import { EmblaOptionsType } from "embla-carousel";
 import EmblaCarousel from "../EmblaCarousel";
-import { Box, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Stack, Typography, useTheme } from "@mui/material";
 import SiteMap from "../SiteMap";
+import homepageContent from "./homepageContent.json";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -37,9 +38,7 @@ const Homepage = () => {
 							maxWidth: "600px",
 						}}
 					>
-						Experience the ultimate hookah lounge vibe in our inviting space.
-						Dive into the finest flavors, unwind from work, and enjoy in our
-						relaxed environment. It is the perfect place for a night out.
+						{homepageContent.tagLine}
 					</Typography>
 				</Stack>
 				<EmblaCarousel options={OPTIONS} />
