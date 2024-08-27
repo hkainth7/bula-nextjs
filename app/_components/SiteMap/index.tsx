@@ -1,13 +1,13 @@
 "use client";
 
-import { Box, Stack, Typography, useMediaQuery } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { TikTokIcon } from "./TikTokIcon";
-import { styled, useTheme } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
@@ -23,9 +23,6 @@ const BusinessHoursTypography = styled(Typography)({
 });
 
 const SiteMap = () => {
-	const theme = useTheme();
-	const isMediumUp = useMediaQuery(theme.breakpoints.up("md"));
-
 	return (
 		<Box
 			sx={{
@@ -34,11 +31,7 @@ const SiteMap = () => {
 				padding: "20px",
 			}}
 		>
-			<Stack
-				gap={4}
-				direction={isMediumUp ? "row" : "column"}
-				justifyContent={isMediumUp ? "space-between" : ""}
-			>
+			<Stack gap={4}>
 				<Stack>
 					<CustomTypography>Follow Our Socials:</CustomTypography>
 					<Stack direction="row" alignItems="center">

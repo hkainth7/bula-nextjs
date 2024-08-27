@@ -10,7 +10,6 @@ import homepageContent from "./homepageContent.json";
 const OPTIONS: EmblaOptionsType = { loop: true };
 
 const Homepage = () => {
-	const theme = useTheme();
 	return (
 		<Stack>
 			<Stack padding={5} paddingX={4}>
