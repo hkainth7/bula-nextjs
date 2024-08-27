@@ -16,7 +16,12 @@ const CarouselCard = (props: CarouselCardProps) => {
 
 	return (
 		<Card
-			sx={{ backgroundColor: "#2F3135", borderRadius: "4px", height: "100%" }}
+			sx={{
+				backgroundColor: "#121212",
+				borderRadius: "8px",
+				height: "100%",
+				border: "2px solid #497445",
+			}}
 		>
 			<CardHeader
 				sx={{ color: "white", padding: "8px", paddingLeft: "20px" }}
