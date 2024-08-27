@@ -33,7 +33,6 @@ const Homepage = () => {
 						sx={{
 							marginY: "20px",
 							fontWeight: "light",
-							paddingX: "12px",
 							maxWidth: "600px",
 						}}
 					>
