@@ -58,10 +58,14 @@ const About = () => {
 				<ContentTypography>{aboutContent.ourJourneyContent}</ContentTypography>
 				<Image
 					src={AboutBanner}
-					layout="responsive"
 					alt="original shishas"
-					style={{ maxHeight: "550px" }}
+					width={1024}
+					height={550}
 					priority={true}
+					style={{
+						width: "100%",
+						height: "auto",
+					}}
 				/>
 				<Stack
 					// direction="row-reverse"
