@@ -61,6 +61,7 @@ const About = () => {
 					layout="responsive"
 					alt="original shishas"
 					style={{ maxHeight: "550px" }}
+					priority={true}
 				/>
 				<Stack
 					// direction="row-reverse"
