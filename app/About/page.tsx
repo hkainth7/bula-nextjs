@@ -96,7 +96,6 @@ const About = () => {
 						src={OutdoorBula}
 						alt="bula entrance"
 						style={{
-							borderRadius: "16px",
 							maxHeight: "314px",
 							maxWidth: "478px",
 						}}
