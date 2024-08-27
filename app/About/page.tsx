@@ -6,7 +6,6 @@ import aboutContent from "./aboutContent.json";
 import Image from "next/image";
 import AboutBanner from "@/public/assets/about-banner.jpg";
 import OutdoorBula from "@/public/assets/bula-lounge-outdoor.jpg";
-import { Title } from "../_components/CustomTitle";
 import { ContentTypography } from "../_components/ContentTypography";
 import ContentBox from "../_components/ContentBox";
 
@@ -57,18 +56,27 @@ const About = () => {
 					<span style={{ color: "#497445" }}>Hookah</span> Experience
 				</Typography>
 				<ContentTypography>{aboutContent.ourJourneyContent}</ContentTypography>
-				<Image src={AboutBanner} layout="responsive" alt="original shishas" />
+				<Image
+					src={AboutBanner}
+					layout="responsive"
+					alt="original shishas"
+					style={{ maxHeight: "550px" }}
+				/>
 				<Stack
 					// direction="row-reverse"
 					sx={{ width: "100%" }}
+					alignItems="center"
 					// justifyContent="space-between"
 				>
 					<Image
 						src={OutdoorBula}
-						height={314}
-						width={478}
 						alt="bula entrance"
-						style={{ borderRadius: "16px" }}
+						style={{
+							borderRadius: "16px",
+							maxHeight: "314px",
+							maxWidth: "478px",
+						}}
+						layout="responsive"
 					/>
 					<Stack>
 						<Typography
@@ -84,7 +92,7 @@ const About = () => {
 							{aboutContent.ourJourney}
 						</Typography>
 						<Box sx={{ maxWidth: "450px" }}>
-							<ContentTypography sx={{ textAlign: "left" }}>
+							<ContentTypography>
 								{aboutContent.ourJourneyContent}
 							</ContentTypography>
 						</Box>
