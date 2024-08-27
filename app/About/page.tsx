@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { Box, Stack, Typography, Divider } from "@mui/material";
 import aboutContent from "./aboutContent.json";
