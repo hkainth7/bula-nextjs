@@ -1,26 +1,39 @@
 "use client";
 
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Box, Stack, Typography, Divider } from "@mui/material";
 import aboutContent from "./aboutContent.json";
+import Image from "next/image";
+import AboutBanner from "@/public/assets/about-banner.jpg";
+import OutdoorBula from "@/public/assets/bula-lounge-outdoor.jpg";
+import { Title } from "../_components/CustomTitle";
+import { ContentTypography } from "../_components/ContentTypography";
+import ContentBox from "../_components/ContentBox";
+
+interface AboutContentData {
+	title: string;
+	content: string;
+}
 
 const About = () => {
-	const Title = styled(Typography)(({ theme }) => ({
-		...theme.typography.h6,
-		marginBottom: "15px",
-	}));
-
-	const ContentTypography = styled(Typography)({
-		fontWeight: "lighter",
-	});
-
-	const ContentBox = styled(Box)({
-		border: "2px solid #497445",
-		borderRadius: "30px 0 30px 0",
-		padding: "18px",
-		textAlign: "center",
-	});
+	const aboutContentData: AboutContentData[] = [
+		{
+			title: aboutContent.worldClass,
+			content: aboutContent.worldClassContent,
+		},
+		{
+			title: aboutContent.celebrity,
+			content: aboutContent.celebrityContent,
+		},
+		{
+			title: aboutContent.catering,
+			content: aboutContent.cateringContent,
+		},
+		{
+			title: aboutContent.experience,
+			content: aboutContent.experienceContent,
+		},
+	];
 
 	return (
 		<main>
@@ -29,36 +42,67 @@ const About = () => {
 				sx={{ padding: "8px", paddingY: "20px" }}
 				gap={3}
 			>
-				<ContentBox>
-					<Title>{aboutContent.welcome}</Title>
-					<ContentTypography>{aboutContent.welcomeContent}</ContentTypography>
-				</ContentBox>
-				<ContentBox>
-					<Title>{aboutContent.ourJourney}</Title>
-					<ContentTypography>
-						{aboutContent.ourJourneyContent}
-					</ContentTypography>
-				</ContentBox>
-				<ContentBox>
-					<Title>{aboutContent.worldClass}</Title>
-					<ContentTypography>
-						{aboutContent.worldClassContent}
-					</ContentTypography>
-				</ContentBox>
-				<ContentBox>
-					<Title>{aboutContent.celebrity}</Title>
-					<ContentTypography>{aboutContent.celebrityContent}</ContentTypography>
-				</ContentBox>
-				<ContentBox>
-					<Title>{aboutContent.catering}</Title>
-					<ContentTypography>{aboutContent.cateringContent}</ContentTypography>
-				</ContentBox>
-				<ContentBox>
-					<Title>{aboutContent.experience}</Title>
-					<ContentTypography>
-						{aboutContent.experienceContent}
-					</ContentTypography>
-				</ContentBox>
+				<Typography
+					variant="h1"
+					textAlign="center"
+					sx={{
+						fontSize: "40px",
+						marginY: "10px",
+						fontWeight: "bold",
+						padding: "8px",
+					}}
+				>
+					Welcome to Bula Hookah Lounge – The World’s First{" "}
+					<span style={{ color: "#497445" }}>Fijian</span>-Themed{" "}
+					<span style={{ color: "#497445" }}>Hookah</span> Experience
+				</Typography>
+				<ContentTypography>{aboutContent.ourJourneyContent}</ContentTypography>
+				<Image src={AboutBanner} layout="responsive" alt="original shishas" />
+				<Stack
+					// direction="row-reverse"
+					sx={{ width: "100%" }}
+					// justifyContent="space-between"
+				>
+					<Image
+						src={OutdoorBula}
+						height={314}
+						width={478}
+						alt="bula entrance"
+						style={{ borderRadius: "16px" }}
+					/>
+					<Stack>
+						<Typography
+							variant="h1"
+							textAlign="center"
+							sx={{
+								fontSize: "40px",
+								marginY: "10px",
+								fontWeight: "bold",
+								padding: "8px",
+							}}
+						>
+							{aboutContent.ourJourney}
+						</Typography>
+						<Box sx={{ maxWidth: "450px" }}>
+							<ContentTypography sx={{ textAlign: "left" }}>
+								{aboutContent.ourJourneyContent}
+							</ContentTypography>
+						</Box>
+					</Stack>
+				</Stack>
+				<Stack
+					sx={{
+						textAlign: "center",
+						backgroundColor: "#2F3135",
+						padding: "8px",
+					}}
+					divider={<Divider flexItem sx={{ backgroundColor: "#497445" }} />}
+					gap={2}
+				>
+					{aboutContentData.map((data, index) => (
+						<ContentBox title={data.title} content={data.content} key={index} />
+					))}
+				</Stack>
 			</Stack>
 		</main>
 	);

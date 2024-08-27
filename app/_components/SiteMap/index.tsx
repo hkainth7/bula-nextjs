@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Divider, Stack, Typography, useMediaQuery } from "@mui/material";
+import { Box, Stack, Typography, useMediaQuery } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";

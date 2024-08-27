@@ -32,7 +32,7 @@ const CarouselCard = (props: CarouselCardProps) => {
 					padding: "8px",
 				}}
 			>
-				<Image src={src} height={225} width={225} alt={`${title} hookah`} />
+				<Image src={src} height={250} width={200} alt={`${title} hookah`} />
 				<Box sx={{ padding: "0px 14px" }}>
 					<DescriptionTypography variant="body2" color={"white"}>
 						{description}
