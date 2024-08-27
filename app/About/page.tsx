@@ -68,16 +68,6 @@ const About = () => {
 					alignItems="center"
 					// justifyContent="space-between"
 				>
-					<Image
-						src={OutdoorBula}
-						alt="bula entrance"
-						style={{
-							borderRadius: "16px",
-							maxHeight: "314px",
-							maxWidth: "478px",
-						}}
-						layout="responsive"
-					/>
 					<Stack>
 						<Typography
 							variant="h1"
@@ -97,6 +87,16 @@ const About = () => {
 							</ContentTypography>
 						</Box>
 					</Stack>
+					<Image
+						src={OutdoorBula}
+						alt="bula entrance"
+						style={{
+							borderRadius: "16px",
+							maxHeight: "314px",
+							maxWidth: "478px",
+						}}
+						layout="responsive"
+					/>
 				</Stack>
 				<Stack
 					sx={{
