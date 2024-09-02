@@ -27,7 +27,11 @@ const CarouselCard = (props: CarouselCardProps) => {
 			<CardHeader
 				sx={{ color: "white", padding: "8px", paddingLeft: "20px" }}
 				title={title}
-				titleTypographyProps={{ variant: "h2", fontSize: "2.0rem" }}
+				titleTypographyProps={{
+					variant: "h2",
+					fontSize: "2.0rem",
+					fontWeight: "500",
+				}}
 			/>
 			<CardContent
 				sx={{
