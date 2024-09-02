@@ -15,7 +15,6 @@ const Homepage = () => {
 			<Stack padding={5} paddingX={4}>
 				<Stack alignItems="center">
 					<Typography
-						variant="h1"
 						textAlign="center"
 						sx={{
 							fontSize: "40px",
