@@ -15,6 +15,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 const CustomTypography = styled(Typography)({
 	fontWeight: "bold",
 	marginBottom: "10px",
+	fontSize: "1.25rem",
 });
 
 const BusinessHoursTypography = styled(Typography)({
@@ -33,7 +34,7 @@ const SiteMap = () => {
 		>
 			<Stack gap={4}>
 				<Stack>
-					<CustomTypography>Follow Our Socials:</CustomTypography>
+					<CustomTypography variant="h3">Follow Our Socials:</CustomTypography>
 					<Stack direction="row" alignItems="center">
 						<Link href="https://www.instagram.com/bulahookahlounge?igsh=MTMzengydnk2MXFiNw==">
 							<InstagramIcon fontSize="large" sx={{ color: "#497445" }} />
@@ -53,7 +54,7 @@ const SiteMap = () => {
 					</Stack>
 				</Stack>
 				<Stack>
-					<CustomTypography>Business Info:</CustomTypography>
+					<CustomTypography variant="h3">Business Info:</CustomTypography>
 					<Stack gap={2} sx={{ marginLeft: "10px" }}>
 						<Stack direction="row">
 							<MailOutlineIcon sx={{ marginRight: "8px" }} />
@@ -70,7 +71,7 @@ const SiteMap = () => {
 					</Stack>
 				</Stack>
 				<Stack>
-					<CustomTypography>Business Hours:</CustomTypography>
+					<CustomTypography variant="h3">Business Hours:</CustomTypography>
 					<Stack sx={{ marginLeft: "10px" }} gap={1}>
 						<BusinessHoursTypography>
 							Sun - Tue: 6:30PM - 12:30AM

@@ -2,10 +2,10 @@
 
 import React from "react";
 import { EmblaOptionsType } from "embla-carousel";
-import EmblaCarousel from "../EmblaCarousel";
-import { Stack, Typography, useTheme } from "@mui/material";
-import SiteMap from "../SiteMap";
+import { Stack, Typography } from "@mui/material";
 import homepageContent from "./homepageContent.json";
+import SiteMap from "../_components/SiteMap";
+import EmblaCarousel from "../_components/EmblaCarousel";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -24,16 +24,16 @@ const Homepage = () => {
 							padding: "4px",
 						}}
 					>
-						Welcome to <span style={{ color: "#497445" }}>Bula Hookah</span>{" "}
-						Lounge!
+						<span style={{ color: "#497445" }}>Bula Hookah</span> Lounge
 					</Typography>
 					<Typography
-						variant="h6"
+						variant="body1"
 						textAlign={"center"}
 						sx={{
 							marginY: "20px",
 							fontWeight: "light",
 							maxWidth: "600px",
+							fontSize: "1.25rem",
 						}}
 					>
 						{homepageContent.tagLine}

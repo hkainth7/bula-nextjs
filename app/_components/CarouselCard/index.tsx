@@ -21,12 +21,13 @@ const CarouselCard = (props: CarouselCardProps) => {
 				borderRadius: "8px",
 				height: "100%",
 				border: "2px solid #497445",
+				padding: "8px",
 			}}
 		>
 			<CardHeader
 				sx={{ color: "white", padding: "8px", paddingLeft: "20px" }}
 				title={title}
-				titleTypographyProps={{ variant: "h6" }}
+				titleTypographyProps={{ variant: "h2", fontSize: "2.0rem" }}
 			/>
 			<CardContent
 				sx={{
@@ -39,7 +40,7 @@ const CarouselCard = (props: CarouselCardProps) => {
 			>
 				<Image src={src} height={250} width={200} alt={`${title} hookah`} />
 				<Box sx={{ padding: "0px 14px" }}>
-					<DescriptionTypography variant="body2" color={"white"}>
+					<DescriptionTypography variant="body1" color={"white"}>
 						{description}
 					</DescriptionTypography>
 				</Box>
