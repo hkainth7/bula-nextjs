@@ -43,17 +43,18 @@ const About = () => {
 					variant="h1"
 					textAlign="center"
 					sx={{
-						fontSize: "40px",
 						marginY: "10px",
 						fontWeight: "bold",
 						padding: "8px",
 					}}
 				>
-					Welcome to Bula Hookah Lounge – The World’s First{" "}
+					Bula Hookah Lounge – The World’s First{" "}
 					<span style={{ color: "#497445" }}>Fijian</span>-Themed{" "}
 					<span style={{ color: "#497445" }}>Hookah</span> Experience
 				</Typography>
-				<ContentTypography>{aboutContent.ourJourneyContent}</ContentTypography>
+				<ContentTypography variant="body1">
+					{aboutContent.ourJourneyContent}
+				</ContentTypography>
 				<Image
 					src={AboutBanner}
 					alt="original shishas"
@@ -65,18 +66,12 @@ const About = () => {
 						height: "auto",
 					}}
 				/>
-				<Stack
-					// direction="row-reverse"
-					sx={{ width: "100%" }}
-					alignItems="center"
-					// justifyContent="space-between"
-				>
+				<Stack sx={{ width: "100%" }} alignItems="center">
 					<Stack>
 						<Typography
-							variant="h1"
+							variant="h2"
 							textAlign="center"
 							sx={{
-								fontSize: "40px",
 								marginY: "10px",
 								fontWeight: "bold",
 								padding: "8px",
