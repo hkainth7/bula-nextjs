@@ -65,7 +65,9 @@ const Homepage = () => {
 					</Typography>
 				</Stack>
 			</Stack>
-			<EmblaCarousel options={OPTIONS} />
+			<Box sx={{ padding: "40px" }}>
+				<EmblaCarousel options={OPTIONS} />
+			</Box>
 			<SiteMap />
 		</Stack>
 	);
