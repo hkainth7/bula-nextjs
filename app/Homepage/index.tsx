@@ -7,7 +7,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import homepageContent from "./homepageContent.json";
 import SiteMap from "../_components/SiteMap";
 import EmblaCarousel from "../_components/EmblaCarousel";
-import GreenSmoke from "@/public/assets/banner-image.jpg";
+import BannerImage from "@/public/assets/banner-image.jpg";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -32,13 +32,12 @@ const Homepage = () => {
 					}}
 				>
 					<Image
-						src={GreenSmoke}
-						alt="header background"
+						src={BannerImage}
+						alt="banner image"
 						fill
 						quality={100}
 						priority={true}
 						style={{ objectFit: "cover", opacity: "0.45" }}
-						className="flipped"
 					/>
 				</Box>
 				<Stack>
