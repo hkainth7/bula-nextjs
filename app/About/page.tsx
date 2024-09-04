@@ -33,7 +33,7 @@ const About = () => {
 	];
 
 	return (
-		<main>
+		<main style={{ maxWidth: "1024px" }}>
 			<Stack
 				alignItems="center"
 				sx={{ padding: "8px", paddingY: "20px" }}
@@ -46,9 +46,10 @@ const About = () => {
 						marginY: "10px",
 						fontWeight: "bold",
 						padding: "8px",
+						fontSize: "4rem",
 					}}
 				>
-					Bula Hookah Lounge – The World’s First{" "}
+					Bula Hookah Lounge The World’s First{" "}
 					<span style={{ color: "#497445" }}>Fijian</span>-Themed{" "}
 					<span style={{ color: "#497445" }}>Hookah</span> Experience
 				</Typography>

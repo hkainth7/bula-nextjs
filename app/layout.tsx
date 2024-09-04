@@ -26,12 +26,13 @@ export const metadata: Metadata = {
 	keywords: "bula, lounge, shisha, hookah, experience",
 	openGraph: {
 		type: "website",
-		url: "https://www.myawesomewebsite.com/",
+		url: "https://bula-lounge.vercel.app/",
 		title: "Bula Lounge",
-		description: "This is a description of Bula Lounge.",
+		description:
+			"Bula Hookah Lounge offers a unique new experience, sharing unique fijian shisha flavours",
 		images: [
 			{
-				url: "https://www.myawesomewebsite.com/image.jpg",
+				url: "https://bula-lounge.vercel.app/image.jpg",
 				width: 800,
 				height: 600,
 				alt: "Og Image Alt",
@@ -41,11 +42,12 @@ export const metadata: Metadata = {
 	twitter: {
 		card: "summary_large_image",
 		title: "Bula Lounge",
-		description: "This is a description of Bula Lounge.",
-		images: { url: "https://www.myawesomewebsite.com/image.jpg" },
+		description:
+			"Bula Hookah Lounge offers a unique new experience, sharing unique fijian shisha flavours",
+		images: { url: "https://bula-lounge.vercel.app/image.jpg" },
 	},
 	alternates: {
-		canonical: "https://www.myawesomewebsite.com/",
+		canonical: "https://bula-lounge.vercel.app/",
 	},
 };
 

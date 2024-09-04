@@ -27,7 +27,6 @@ const SiteMap = () => {
 	return (
 		<Box
 			sx={{
-				marginTop: "10px",
 				borderTop: "2px solid #497445",
 				padding: "20px",
 			}}
