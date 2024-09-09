@@ -46,7 +46,7 @@ const About = () => {
 						marginY: "10px",
 						fontWeight: "bold",
 						padding: "8px",
-						fontSize: "4rem",
+						fontSize: "3rem",
 					}}
 				>
 					Bula Hookah Lounge The World’s First{" "}
@@ -76,6 +76,7 @@ const About = () => {
 								marginY: "10px",
 								fontWeight: "bold",
 								padding: "8px",
+								fontSize: "2.5rem",
 							}}
 						>
 							{aboutContent.ourJourney}
@@ -100,7 +101,7 @@ const About = () => {
 					sx={{
 						textAlign: "center",
 						backgroundColor: "#2F3135",
-						padding: "8px",
+						padding: "18px 12px",
 					}}
 					divider={<Divider flexItem sx={{ backgroundColor: "#497445" }} />}
 					gap={2}

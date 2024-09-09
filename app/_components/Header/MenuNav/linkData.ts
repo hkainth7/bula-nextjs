@@ -6,7 +6,7 @@ export const linkData: LinkData[] = [
 		title: "Home",
 	},
 	{
-		href: "/Contact",
+		href: "/Catering",
 		title: "Catering",
 	},
 	{
