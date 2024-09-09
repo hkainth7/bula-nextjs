@@ -57,7 +57,7 @@ const SiteMap = () => {
 					<Stack gap={2} sx={{ marginLeft: "10px" }}>
 						<Stack direction="row">
 							<MailOutlineIcon sx={{ marginRight: "8px" }} />
-							<Typography>bulalounge@gmail.ca</Typography>
+							<Typography>info@bulalounge.ca</Typography>
 						</Stack>
 						<Stack direction="row">
 							<LocalPhoneOutlinedIcon sx={{ marginRight: "8px" }} />
