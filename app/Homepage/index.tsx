@@ -27,7 +27,7 @@ const Homepage = () => {
 					/>
 				</Box>
 				<Stack>
-					<Typography className={styles.mainHeading}>
+					<Typography variant="h1" className={styles.mainHeading}>
 						<span className={styles.mainHeadingColor}>Bula Hookah</span> Lounge
 					</Typography>
 					<Typography variant="body1" className={styles.headingCaption}>

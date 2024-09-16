@@ -20,19 +20,19 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-	title: "Bula Lounge",
+	title: "Bula Hookah Lounge",
 	description:
-		"Welcome to. BULA LOUNGE. Meet new experience, Add one more happiness with loving “Shisha”",
-	keywords: "bula, lounge, shisha, hookah, experience",
+		"Step into Bula Hookah Lounge, where unforgettable moments await. Relax, unwind, and elevate your experience with our carefully crafted Shisha. Happiness is just a puff away!",
+	keywords: "hookah, lounge, shisha,",
 	openGraph: {
 		type: "website",
-		url: "https://bula-lounge.vercel.app/",
+		url: "https://bulalounge.com/",
 		title: "Bula Lounge",
 		description:
 			"Bula Hookah Lounge offers a unique new experience, sharing unique fijian shisha flavours",
 		images: [
 			{
-				url: "https://bula-lounge.vercel.app/image.jpg",
+				url: "https://bulalounge.com/image.jpg",
 				width: 800,
 				height: 600,
 				alt: "Og Image Alt",
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
 		title: "Bula Lounge",
 		description:
 			"Bula Hookah Lounge offers a unique new experience, sharing unique fijian shisha flavours",
-		images: { url: "https://bula-lounge.vercel.app/image.jpg" },
+		images: { url: "https://bulalounge.com/image.jpg" },
 	},
 	alternates: {
-		canonical: "https://bula-lounge.vercel.app/",
+		canonical: "https://bulalounge.com/",
 	},
 };
 
