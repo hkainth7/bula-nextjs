@@ -23,6 +23,9 @@ export const metadata: Metadata = {
 	title: "Bula Hookah Lounge",
 	description:
 		"Step into Bula Hookah Lounge, where unforgettable moments await. Relax, unwind, and elevate your experience with our carefully crafted Shisha. Happiness is just a puff away!",
+	icons: {
+		icon: "./favicon.ico",
+	},
 	keywords: "hookah, lounge, shisha,",
 	openGraph: {
 		type: "website",
