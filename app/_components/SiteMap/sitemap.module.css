@@ -1,0 +1,32 @@
+.sitemapContainer {
+	border-top: 2px solid #497445;
+	padding: 20px;
+}
+
+.headings {
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 1.25rem;
+}
+
+.businessHeadings {
+	font-size: 15px;
+	font-weight: light;
+}
+
+.icon {
+	color: #497445;
+}
+
+.tikTokIcon {
+	width: 35px;
+}
+
+@media only screen and (min-width: 600px) {
+	.contentContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 40px 0;
+	}
+}

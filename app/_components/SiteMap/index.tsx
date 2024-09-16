@@ -1,5 +1,3 @@
-"use client";
-
 import { Box, Stack, Typography } from "@mui/material";
 import Link from "next/link";
 import React from "react";
@@ -7,81 +5,99 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { TikTokIcon } from "./TikTokIcon";
-import { styled } from "@mui/material/styles";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
-
-const CustomTypography = styled(Typography)({
-	fontWeight: "bold",
-	marginBottom: "10px",
-	fontSize: "1.25rem",
-});
-
-const BusinessHoursTypography = styled(Typography)({
-	fontSize: "15px",
-	fontWeight: "light",
-});
+import styles from "./sitemap.module.css";
 
 const SiteMap = () => {
+	const linkData = [
+		{
+			href: "https://www.instagram.com/bulahookahlounge?igsh=MTMzengydnk2MXFiNw==",
+			icon: <InstagramIcon fontSize="large" className={styles.icon} />,
+		},
+		{
+			href: "https://youtube.com/@bulahookahlounge?si=-PkGPD7CmQ_NOf4a",
+			icon: <YouTubeIcon fontSize="large" className={styles.icon} />,
+		},
+		{
+			href: "https://youtube.com/@bulahookahlounge?si=-PkGPD7CmQ_NOf4a",
+			icon: <FacebookIcon fontSize="large" className={styles.icon} />,
+		},
+	];
+
+	const infoData = [
+		{
+			icon: <MailOutlineIcon />,
+			content: "info@bulalounge.ca",
+		},
+		{
+			icon: <LocalPhoneOutlinedIcon />,
+			content: "236-558-3099",
+		},
+		{
+			icon: <LocationOnOutlinedIcon />,
+			content: "4027 Hastings St, Burnaby",
+		},
+	];
+
+	const businessHours = [
+		{
+			content: "Sun - Tue: 6:30PM - 12:30AM",
+		},
+		{
+			content: "Fri - Sat: 6:30PM to 2:30AM",
+		},
+		{
+			content:
+				"For statutory holidays, refer to Google Maps for updated/modified hours.",
+		},
+	];
+
 	return (
-		<Box
-			sx={{
-				borderTop: "2px solid #497445",
-				padding: "20px",
-			}}
-		>
-			<Stack gap={4}>
+		<Box className={styles.sitemapContainer}>
+			<Stack gap={4} className={styles.contentContainer}>
 				<Stack>
-					<CustomTypography variant="h3">Follow Our Socials:</CustomTypography>
+					<Typography variant="h3" className={styles.headings}>
+						Follow Our Socials:
+					</Typography>
 					<Stack direction="row" alignItems="center">
-						<Link href="https://www.instagram.com/bulahookahlounge?igsh=MTMzengydnk2MXFiNw==">
-							<InstagramIcon fontSize="large" sx={{ color: "#497445" }} />
-						</Link>
-						<Link href="https://youtube.com/@bulahookahlounge?si=-PkGPD7CmQ_NOf4a">
-							<YouTubeIcon fontSize="large" sx={{ color: "#497445" }} />
-						</Link>
-						<Link href="https://www.facebook.com/share/AUrtqQFX3K6hvjua/?mibextid=qi2Omg">
-							<FacebookIcon fontSize="large" sx={{ color: "#497445" }} />
-						</Link>
+						{linkData.map((link, index) => (
+							<Link href={link.href} key={index}>
+								{link.icon}
+							</Link>
+						))}
 						<Link
 							href="https://youtube.com/@bulahookahlounge?si=-PkGPD7CmQ_NOf4a"
-							style={{ width: "35px" }}
+							className={styles.tikTokIcon}
 						>
 							<TikTokIcon color={"#497445"} />
 						</Link>
 					</Stack>
 				</Stack>
 				<Stack>
-					<CustomTypography variant="h3">Business Info:</CustomTypography>
-					<Stack gap={2} sx={{ marginLeft: "10px" }}>
-						<Stack direction="row">
-							<MailOutlineIcon sx={{ marginRight: "8px" }} />
-							<Typography>info@bulalounge.ca</Typography>
-						</Stack>
-						<Stack direction="row">
-							<LocalPhoneOutlinedIcon sx={{ marginRight: "8px" }} />
-							<Typography>236-558-3099</Typography>
-						</Stack>
-						<Stack direction="row">
-							<LocationOnOutlinedIcon sx={{ marginRight: "8px" }} />
-							<Typography>4027 Hastings St, Burnaby</Typography>
-						</Stack>
+					<Typography variant="h3" className={styles.headings}>
+						Business Info:
+					</Typography>
+					<Stack gap={2}>
+						{infoData.map(({ icon, content }, index) => (
+							<Stack direction="row" key={index}>
+								{icon}
+								<Typography>{content}</Typography>
+							</Stack>
+						))}
 					</Stack>
 				</Stack>
 				<Stack>
-					<CustomTypography variant="h3">Business Hours:</CustomTypography>
-					<Stack sx={{ marginLeft: "10px" }} gap={1}>
-						<BusinessHoursTypography>
-							Sun - Tue: 6:30PM - 12:30AM
-						</BusinessHoursTypography>
-						<BusinessHoursTypography>
-							Fri - Sat: 6:30PM to 2:30AM
-						</BusinessHoursTypography>
-						<BusinessHoursTypography>
-							For statutory holidays, refer to Google Maps for updated/modified
-							hours.
-						</BusinessHoursTypography>
+					<Typography variant="h3" className={styles.headings}>
+						Business Hours:
+					</Typography>
+					<Stack gap={1}>
+						{businessHours.map(({ content }, index) => (
+							<Typography className={styles.businessHeadings} key={index}>
+								{content}
+							</Typography>
+						))}
 					</Stack>
 				</Stack>
 			</Stack>
