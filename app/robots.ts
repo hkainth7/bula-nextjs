@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
 			allow: "/",
 			disallow: "/private/",
 		},
-		sitemap: "https://bula-lounge.vercel.app/sitemap.xml",
+		sitemap: "https://bulalounge.com/sitemap.xml",
 	};
 }

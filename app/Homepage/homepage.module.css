@@ -37,6 +37,11 @@
 	max-width: 500px;
 }
 
+.carouselHeading {
+	font-size: 1.55rem;
+	margin-bottom: 30px;
+}
+
 .carouselContainer {
 	padding: 40px;
 }

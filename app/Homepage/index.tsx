@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import { EmblaOptionsType } from "embla-carousel";
@@ -36,6 +34,9 @@ const Homepage = () => {
 				</Stack>
 			</Stack>
 			<Box className={styles.carouselContainer}>
+				<Typography className={styles.carouselHeading} variant="h2">
+					Swipe through our lineup of world class Hookahs
+				</Typography>
 				<EmblaCarousel options={OPTIONS} />
 			</Box>
 			<SiteMap />
