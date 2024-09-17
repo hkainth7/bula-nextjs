@@ -1,0 +1,17 @@
+.footerContainer {
+	text-align: center;
+	font-size: 12px;
+	font-weight: thin;
+}
+
+.poweredByContainer {
+	margin-left: 4px;
+	font-size: 12px;
+}
+
+.link {
+	margin-left: 4px;
+	font-size: 12px;
+	color: #468cde;
+	font-size: 14px;
+}

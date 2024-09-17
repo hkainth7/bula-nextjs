@@ -1,16 +1,10 @@
-"use client";
 import React from "react";
 import { Stack, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
 import Link from "next/link";
+import styles from "./footer.module.css";
 
 const Footer = () => {
 	const copyrightYear = new Date().getFullYear();
-
-	const CustomLink = styled(Link)({
-		color: "#468CDE",
-		fontSize: "16px",
-	});
 
 	return (
 		<footer>
@@ -20,20 +14,14 @@ const Footer = () => {
 				justifyContent="center"
 				gap={1}
 			>
-				<Typography
-					sx={{
-						textAlign: "center",
-						fontSize: "12px",
-						fontWeight: "light",
-					}}
-				>
+				<Typography className={styles.footerContainer}>
 					Copyright ©{copyrightYear} Bula Hookah Lounge
 				</Typography>
-				<Typography sx={{ textAlign: "center", fontSize: "12px" }}>
+				<Typography className={styles.poweredByContainer}>
 					Powered by
-					<CustomLink href={""} sx={{ marginLeft: "4px", fontSize: "12px" }}>
+					<Link href={""} className={styles.link}>
 						HKDev
-					</CustomLink>
+					</Link>
 				</Typography>
 			</Stack>
 		</footer>
