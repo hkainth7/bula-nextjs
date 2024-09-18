@@ -1,0 +1,99 @@
+.mainContainer {
+	max-width: 1024px;
+}
+
+.mainTitle {
+	margin: 10px 0;
+	font-weight: bold;
+	padding: 8px;
+	font-size: 3rem;
+}
+
+.spanColor {
+	color: #497445;
+}
+
+.bannerContainer {
+	position: relative;
+}
+
+.bannerImage {
+	opacity: 0.4;
+}
+
+.title {
+	margin-bottom: 15px;
+	font-size: 3rem;
+}
+.titleContainer {
+	text-align: center;
+}
+
+.bannerContentBox {
+	padding: 8px;
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	transform: translate(-25%, -10%);
+	min-width: 500px;
+}
+
+.content {
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+.customTitle {
+	font-size: 1.5rem;
+	color: #497445;
+	line-height: 1.3;
+}
+
+.contentContainer {
+	width: 100%;
+}
+
+.infoContainer {
+	border: 2px solid #497445;
+	padding: 16px 8px;
+	border-radius: 4px;
+}
+
+.contentBox {
+	text-align: center;
+	padding: 18px 12px;
+	flex-wrap: wrap;
+}
+
+.contentTitle {
+	margin-bottom: 15px;
+	font-size: 1.75rem;
+}
+
+@media only screen and (min-width: 800px) {
+	.contentContainer {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.contentBox {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.infoContainer {
+		width: 49%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.title {
+		font-size: 1.4rem;
+	}
+
+	.content {
+		font-size: 1.2rem;
+	}
+}

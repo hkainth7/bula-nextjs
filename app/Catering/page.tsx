@@ -1,10 +1,9 @@
 import React from "react";
-import { Box, Stack, Typography, Divider } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import cateringContent from "./cateringContent.json";
 import Image from "next/image";
 import HookahModel from "@/public/assets/hookah-model.jpg";
-import ContentBox from "../_components/ContentBox";
-import { ContentTypography } from "../_components/ContentTypography";
+import styles from "./catering.module.css";
 
 interface CateringContentData {
 	title: string;
@@ -32,70 +31,53 @@ const Catering = () => {
 	];
 
 	return (
-		<main style={{ maxWidth: "1024px" }}>
-			<Stack
-				alignItems="center"
-				sx={{ padding: "8px", paddingY: "20px" }}
-				gap={3}
-			>
+		<main className={styles.mainContainer}>
+			<Stack alignItems="center" gap={3}>
 				<Typography
 					variant="h1"
 					textAlign="center"
-					sx={{
-						marginY: "10px",
-						fontWeight: "bold",
-						padding: "8px",
-						fontSize: "3rem",
-					}}
+					className={styles.mainTitle}
 				>
 					Bula Hookah Lounge: A Premier Hookah{" "}
-					<span style={{ color: "#497445" }}>Catering Service</span>{" "}
+					<span className={styles.spanColor}>Catering Service</span>{" "}
 				</Typography>
-				<Box sx={{ position: "relative", height: "800px" }}>
+				<Box className={styles.bannerContainer}>
 					<Image
 						src={HookahModel}
 						alt="hookah model"
-						height={800}
-						width={600}
-						style={{ opacity: 0.4 }}
+						className={styles.bannerImage}
+						layout="responsive"
 					/>
-					<ContentBox
-						title={cateringContent.tagline}
-						content={cateringContent.taglineContent}
-						sx={{
-							padding: "8px",
-							textAlign: "center",
-							position: "absolute",
-							top: "25%",
-							left: "50%",
-							transform: "translate(-50%, -25%)",
-							minWidth: "500px",
-						}}
-					/>
+					<Box className={styles.bannerContentBox}>
+						<Typography variant="h3" className={styles.title}>
+							{cateringContent.tagline}
+						</Typography>
+						<Typography className={styles.content}>
+							{cateringContent.taglineContent}
+						</Typography>
+					</Box>
 				</Box>
 				<Box>
-					<ContentBox
-						title={cateringContent.hookahMenu}
-						content={cateringContent.hookahMeuContent}
-						sx={{ textAlign: "center" }}
-					/>
-					<ContentTypography
-						sx={{ fontSize: "1.5rem", color: "#497445", lineHeight: "1.3" }}
-					>
-						{cateringContent.customFlavours}
-					</ContentTypography>
+					<Stack gap={2} className={styles.titleContainer}>
+						<Typography variant="h3" className={styles.title}>
+							{cateringContent.hookahMenu}
+						</Typography>
+						<Typography className={styles.content}>
+							{cateringContent.hookahMeuContent}
+						</Typography>
+						<Typography className={styles.customTitle}>
+							{cateringContent.customFlavours}
+						</Typography>
+					</Stack>
 				</Box>
-				<Stack
-					sx={{
-						textAlign: "center",
-						backgroundColor: "#2F3135",
-						padding: "18px 12px",
-					}}
-					divider={<Divider flexItem sx={{ backgroundColor: "#497445" }} />}
-					gap={2}
-				>
+				<Stack className={styles.contentBox} gap={2}>
 					{cateringContentData.map((data, index) => (
-						<ContentBox title={data.title} content={data.content} key={index} />
+						<Box className={styles.infoContainer} key={index}>
+							<Typography className={styles.contentTitle} variant="h3">
+								{data.title}
+							</Typography>
+							<Typography className={styles.content}>{data.content}</Typography>
+						</Box>
 					))}
 				</Stack>
 			</Stack>
