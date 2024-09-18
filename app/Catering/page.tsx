@@ -41,13 +41,7 @@ const Catering = () => {
 					Bula Hookah Lounge: A Premier Hookah{" "}
 					<span className={styles.spanColor}>Catering Service</span>{" "}
 				</Typography>
-				<Box className={styles.bannerContainer}>
-					<Image
-						src={HookahModel}
-						alt="hookah model"
-						className={styles.bannerImage}
-						layout="responsive"
-					/>
+				<Stack className={styles.bannerContainer} alignItems="center">
 					<Box className={styles.bannerContentBox}>
 						<Typography variant="h3" className={styles.title}>
 							{cateringContent.tagline}
@@ -56,7 +50,15 @@ const Catering = () => {
 							{cateringContent.taglineContent}
 						</Typography>
 					</Box>
-				</Box>
+					<Box>
+						<Image
+							src={HookahModel}
+							priority={true}
+							alt="hookah model"
+							className={styles.bannerImage}
+						/>
+					</Box>
+				</Stack>
 				<Box>
 					<Stack gap={2} className={styles.titleContainer}>
 						<Typography variant="h3" className={styles.title}>

@@ -13,12 +13,10 @@
 	color: #497445;
 }
 
-.bannerContainer {
-	position: relative;
-}
-
 .bannerImage {
 	opacity: 0.4;
+	width: 400px;
+	height: auto;
 }
 
 .title {
@@ -31,10 +29,7 @@
 
 .bannerContentBox {
 	padding: 8px;
-	position: absolute;
-	top: 10%;
-	left: 25%;
-	transform: translate(-25%, -10%);
+	height: 100%;
 }
 
 .content {
@@ -51,6 +46,10 @@
 
 .contentContainer {
 	width: 100%;
+}
+
+.bannerContainer {
+	text-align: center;
 }
 
 .infoContainer {
@@ -85,6 +84,15 @@
 
 	.infoContainer {
 		width: 49%;
+	}
+	.bannerContainer {
+		flex-direction: row;
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.bannerContentBox {
+		height: 100%;
 	}
 }
 
