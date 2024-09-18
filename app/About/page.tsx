@@ -4,8 +4,8 @@ import aboutContent from "./aboutContent.json";
 import Image from "next/image";
 import AboutBanner from "@/public/assets/about-banner.jpg";
 import OutdoorBula from "@/public/assets/bula-lounge-outdoor.jpg";
-import { ContentTypography } from "../_components/ContentTypography";
-import ContentBox from "../_components/ContentBox";
+import styles from "./about.module.css";
+import Link from "next/link";
 
 interface AboutContentData {
 	title: string;
@@ -33,81 +33,55 @@ const About = () => {
 	];
 
 	return (
-		<main style={{ maxWidth: "1024px" }}>
-			<Stack
-				alignItems="center"
-				sx={{ padding: "8px", paddingY: "20px" }}
-				gap={3}
-			>
-				<Typography
-					variant="h1"
-					textAlign="center"
-					sx={{
-						marginY: "10px",
-						fontWeight: "bold",
-						padding: "8px",
-						fontSize: "3rem",
-					}}
-				>
+		<main className={styles.mainContainer}>
+			<Stack alignItems="center" gap={3} className={styles.container}>
+				<Typography variant="h1" textAlign="center" className={styles.title}>
 					Bula Hookah Lounge The World’s First{" "}
-					<span style={{ color: "#497445" }}>Fijian</span>-Themed{" "}
-					<span style={{ color: "#497445" }}>Hookah</span> Experience
+					<span className={styles.spanColor}>Fijian</span> Themed{" "}
+					<span className={styles.spanColor}>Hookah</span> Experience
 				</Typography>
-				<ContentTypography variant="body1">
+				<Typography variant="body1" className={styles.content}>
 					{aboutContent.ourJourneyContent}
-				</ContentTypography>
+				</Typography>
 				<Image
 					src={AboutBanner}
 					alt="original shishas"
 					width={1024}
 					height={550}
 					priority={true}
-					style={{
-						width: "100%",
-						height: "auto",
-					}}
+					className={styles.bannerImage}
 				/>
-				<Stack sx={{ width: "100%" }} alignItems="center">
+				<Stack className={styles.contentContainer} alignItems="center">
 					<Stack>
-						<Typography
-							variant="h2"
-							textAlign="center"
-							sx={{
-								marginY: "10px",
-								fontWeight: "bold",
-								padding: "8px",
-								fontSize: "2.5rem",
-							}}
-						>
+						<Typography variant="h2" className={styles.journeyTitle}>
 							{aboutContent.ourJourney}
 						</Typography>
-						<Box sx={{ maxWidth: "450px" }}>
-							<ContentTypography>
+						<Box className={styles.journeyContentContainer}>
+							<Typography className={styles.ourJourneyContent}>
 								{aboutContent.ourJourneyContent}
-							</ContentTypography>
+							</Typography>
 						</Box>
 					</Stack>
 					<Image
 						src={OutdoorBula}
 						alt="bula entrance"
-						style={{
-							maxHeight: "314px",
-							maxWidth: "478px",
-						}}
+						className={styles.outdoorImage}
 						layout="responsive"
 					/>
 				</Stack>
-				<Stack
-					sx={{
-						textAlign: "center",
-						backgroundColor: "#2F3135",
-						padding: "18px 12px",
-					}}
-					divider={<Divider flexItem sx={{ backgroundColor: "#497445" }} />}
-					gap={2}
-				>
+				<Stack className={styles.contentBox} gap={2}>
 					{aboutContentData.map((data, index) => (
-						<ContentBox title={data.title} content={data.content} key={index} />
+						<Box className={styles.infoContainer} key={index}>
+							<Typography className={styles.contentTitle} variant="h3">
+								{data.title}
+							</Typography>
+							<Typography className={styles.content}>{data.content}</Typography>
+							{data.title === "Hookah Catering" ? (
+								<Link className={styles.link} href="/Catering">
+									Learn More...
+								</Link>
+							) : null}
+						</Box>
 					))}
 				</Stack>
 			</Stack>

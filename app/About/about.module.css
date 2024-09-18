@@ -1,0 +1,101 @@
+.mainContainer {
+	max-width: 1024px;
+}
+
+.container {
+	padding: 8px;
+	padding-top: 20px;
+}
+
+.title {
+	margin-top: 10px;
+	font-weight: bold;
+	padding: 8px;
+	font-size: 3rem;
+}
+
+.spanColor {
+	color: #497445;
+}
+
+.bannerImage {
+	width: 100%;
+	height: auto;
+}
+
+.contentContainer {
+	width: 100%;
+}
+
+.journeyTitle {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+.journeyContentContainer {
+	max-width: 450px;
+}
+
+.content {
+	font-size: 16px;
+	text-align: center;
+	line-height: 1.65;
+	padding: 10px;
+}
+
+.ourJourneyContent {
+	font-size: 16px;
+	line-height: 1.65;
+}
+
+.outdoorImage {
+	max-height: 314px;
+	max-width: 478px;
+}
+
+.contentBox {
+	text-align: center;
+	padding: 18px 12px;
+	flex-wrap: wrap;
+}
+
+.dividerStyle {
+	background-color: #497445;
+}
+
+.contentTitle {
+	margin-bottom: 15px;
+	font-size: 1.75rem;
+}
+
+.infoContainer {
+	border: 2px solid #497445;
+	padding: 16px 8px;
+	border-radius: 4px;
+}
+
+.link {
+	margin-left: 4px;
+	font-size: 16px;
+	color: #468cde;
+	font-size: 16px;
+}
+
+@media only screen and (min-width: 800px) {
+	.contentContainer {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.contentBox {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.infoContainer {
+		width: 49%;
+	}
+}
