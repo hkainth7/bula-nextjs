@@ -7,9 +7,7 @@
 	padding: 0;
 }
 
-.menu {
-	& .MuiList-root {
-		background-color: #2f3135;
-		padding: 0;
-	}
+.menuRoot {
+	background-color: #2f3135;
+	padding: 0;
 }

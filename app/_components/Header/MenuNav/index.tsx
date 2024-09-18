@@ -43,12 +43,7 @@ const MenuNav = () => {
 				MenuListProps={{
 					"aria-labelledby": "basic-button",
 				}}
-				sx={{
-					"& .MuiList-root": {
-						backgroundColor: "#2F3135",
-						padding: 0,
-					},
-				}}
+				classes={{ list: styles.menuRoot }}
 				anchorOrigin={{
 					vertical: "bottom",
 					horizontal: "right",
