@@ -20,7 +20,7 @@ const CarouselCard = (props: CarouselCardProps) => {
 			/>
 			<CardContent className={styles.cardContent}>
 				<Image src={src} height={250} width={200} alt={`${title} hookah`} />
-				<Box sx={{ padding: "0px 14px" }}>
+				<Box className={styles.descriptionContainer}>
 					<Typography variant="body1" className={styles.description}>
 						{description}
 					</Typography>
