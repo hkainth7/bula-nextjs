@@ -7,7 +7,7 @@ import MenuNav from "./MenuNav";
 
 const Header = () => {
 	return (
-		<header style={{ position: "relative" }}>
+		<header>
 			<Stack direction="row" alignItems="center" justifyContent="space-between">
 				<Link href="/">
 					<Image src={BulaLogo} height={90} width={90} alt="Bula lounge logo" />
