@@ -81,11 +81,12 @@ const Homepage = () => {
 					className={styles.contentBox}
 					gap={3}
 				>
-					{discoverData.map((data) => (
+					{discoverData.map((data, index) => (
 						<Stack
 							justifyContent="space-between"
 							className={`${styles.infoContainer} ${styles.offerContainer}`}
 							gap={4}
+							key={index}
 						>
 							<Box className={styles.backgroundImageContainer}>
 								<Image
