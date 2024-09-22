@@ -6,46 +6,22 @@ import homepageContent from "./homepageContent.json";
 import SiteMap from "../_components/SiteMap";
 import EmblaCarousel from "../_components/EmblaCarousel";
 import BannerImage from "@/public/assets/banner-image.jpg";
-import ExperienceImage from "@/public/assets/bula-experience.jpg";
-import CateringBula from "@/public/assets/catering-bula.jpg";
-import WhoWeAre from "@/public/assets/who-we-are.jpg";
 import styles from "./homepage.module.css";
 import Link from "next/link";
-import { Montserrat } from "next/font/google";
+import { Dela_Gothic_One, Roboto_Slab } from "next/font/google";
+import { discoverData } from "./discoverData";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
-const montserrat = Montserrat({
-	weight: ["400", "500", "600"],
+const dela = Dela_Gothic_One({
+	weight: ["400"],
 	subsets: ["latin"],
 });
 
-const discoverData = [
-	{
-		title: "Catering",
-		content:
-			"Make your event unforgettable with our hookah catering service. We offer top-quality hookahs, a variety of flavors, and a professional setup for a unique experience your guests will love",
-		imgSrc: CateringBula,
-		href: "/Catering",
-		linkText: "Explore catering options...",
-	},
-	{
-		title: "Flavors & Experience",
-		content:
-			"At Bula Hookah Lounge, we offer a wide range of hookah flavors to suit every taste. Whether you’re in the mood for something fruity or bold, our carefully curated selection promises an exceptional smoking experience",
-		imgSrc: ExperienceImage,
-		href: "/Contact",
-		linkText: "Contact us...",
-	},
-	{
-		title: "Who We Are",
-		content:
-			"Discover the vibe at Bula Hookah Lounge, where premium hookahs meet a laid-back atmosphere. Learn more about our story and what makes us the perfect spot to unwind",
-		imgSrc: WhoWeAre,
-		href: "/About",
-		linkText: "Read more about us...",
-	},
-];
+const robSlab = Roboto_Slab({
+	weight: ["400"],
+	subsets: ["latin"],
+});
 
 const Homepage = () => {
 	return (
@@ -64,9 +40,9 @@ const Homepage = () => {
 				<Stack>
 					<Typography
 						variant="h1"
-						className={`${styles.mainHeading} ${montserrat.className}`}
+						className={`${styles.mainHeading} ${dela.className}`}
 					>
-						<span className={styles.mainHeadingColor}>Bula Hookah</span> Lounge
+						<span className={styles.mainHeadingColor}>BULA HOOKAH</span> LOUNGE
 					</Typography>
 					<Typography variant="body1" className={styles.headingSlogan}>
 						{homepageContent.slogan}
@@ -74,7 +50,10 @@ const Homepage = () => {
 				</Stack>
 			</Stack>
 			<Stack alignItems="center" className={styles.captionContainer}>
-				<Typography variant="h2" className={styles.headingCaption}>
+				<Typography
+					variant="h2"
+					className={`${styles.headingCaption} ${robSlab.className}`}
+				>
 					{homepageContent.tagLine}
 				</Typography>
 			</Stack>
