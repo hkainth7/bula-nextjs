@@ -21,7 +21,7 @@ const discoverData = [
 			"Make your event unforgettable with our hookah catering service. We offer top-quality hookahs, a variety of flavors, and a professional setup for a unique experience your guests will love",
 		imgSrc: CateringBula,
 		href: "/Catering",
-		linkText: "Explore Catering Options...",
+		linkText: "Explore catering options...",
 	},
 	{
 		title: "Flavors & Experience",
@@ -29,15 +29,15 @@ const discoverData = [
 			"At Bula Hookah Lounge, we offer a wide range of hookah flavors to suit every taste. Whether you’re in the mood for something fruity or bold, our carefully curated selection promises an exceptional smoking experience",
 		imgSrc: ExperienceImage,
 		href: "/Contact",
-		linkText: "Contact Us...",
+		linkText: "Contact us...",
 	},
 	{
-		title: "Catering",
+		title: "Who We Are",
 		content:
-			"Make your event unforgettable with our hookah catering service. We offer top-quality hookahs, a variety of flavors, and a professional setup for a unique experience your guests will love",
-		imgSrc: CateringBula,
-		href: "/Catering",
-		linkText: "Explore Catering Options...",
+			"Discover the vibe at Bula Hookah Lounge, where premium hookahs meet a laid-back atmosphere. Learn more about our story and what makes us the perfect spot to unwind",
+		imgSrc: WhoWeAre,
+		href: "/About",
+		linkText: "Read more about us...",
 	},
 ];
 
