@@ -21,7 +21,7 @@
 }
 
 .mainHeading {
-	font-size: 4rem;
+	font-size: 5rem;
 	margin-top: 10px;
 	font-weight: 500;
 }
@@ -30,11 +30,23 @@
 	color: #497445;
 }
 
+.headingSlogan {
+	margin-top: 20px;
+	font-weight: 300;
+	font-size: 2.25rem;
+	margin-left: 20px;
+}
+
 .headingCaption {
 	margin-top: 20px;
 	font-weight: 300;
-	font-size: 1.25rem;
-	max-width: 500px;
+	font-size: 2.25rem;
+	padding: 40px;
+	max-width: 1000px;
+}
+
+.captionContainer {
+	text-align: center;
 }
 
 .carouselHeading {
@@ -46,8 +58,72 @@
 	padding: 40px;
 }
 
+.discoverContainer {
+	text-align: center;
+	padding: 0 20px;
+	margin: 40px 0;
+}
+
+.infoContainer {
+	border: 2px solid #497445;
+	padding: 30px;
+	border-radius: 4px;
+}
+
+.contentBox {
+	text-align: center;
+	padding: 18px 12px;
+}
+
+.link {
+	margin-left: 4px;
+	font-size: 12px;
+	color: #468cde;
+	font-size: 18px;
+	text-align: right;
+}
+
+.offerContainer {
+	position: relative;
+	padding: 16px;
+	justify-content: center;
+}
+
+.discoverText {
+	font-size: 2rem;
+}
+
+.title {
+	font-size: 2rem;
+}
+.content {
+	font-size: 1.25rem;
+	line-height: 1.65;
+}
+
 @media only screen and (min-width: 800px) {
 	.homeContainer {
 		padding-left: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.mainHeading {
+		font-size: 4rem;
+	}
+	.headingCaption {
+		font-size: 1.75rem;
+	}
+}
+
+@media only screen and (min-width: 950px) {
+	.contentBox {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.headingCaption {
+		font-size: 1.75rem;
 	}
 }
