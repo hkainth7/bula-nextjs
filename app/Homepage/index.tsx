@@ -83,7 +83,6 @@ const Homepage = () => {
 				>
 					{discoverData.map((data, index) => (
 						<Stack
-							justifyContent="space-between"
 							className={`${styles.infoContainer} ${styles.offerContainer}`}
 							gap={4}
 							key={index}
