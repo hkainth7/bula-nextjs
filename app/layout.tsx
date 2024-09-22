@@ -57,9 +57,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className={roboto.className}>
+		<html lang="en">
 			<body>
-				<Stack justifyContent={"space-between"} sx={{ height: "100vh" }}>
+				<Stack
+					justifyContent={"space-between"}
+					sx={{ height: "100vh" }}
+					className={`${roboto.className}`}
+				>
 					<Header />
 					{children}
 					<Footer />

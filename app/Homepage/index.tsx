@@ -11,8 +11,14 @@ import CateringBula from "@/public/assets/catering-bula.jpg";
 import WhoWeAre from "@/public/assets/who-we-are.jpg";
 import styles from "./homepage.module.css";
 import Link from "next/link";
+import { Montserrat } from "next/font/google";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
+
+const montserrat = Montserrat({
+	weight: ["400", "500", "600"],
+	subsets: ["latin"],
+});
 
 const discoverData = [
 	{
@@ -56,7 +62,10 @@ const Homepage = () => {
 					/>
 				</Box>
 				<Stack>
-					<Typography variant="h1" className={styles.mainHeading}>
+					<Typography
+						variant="h1"
+						className={`${styles.mainHeading} ${montserrat.className}`}
+					>
 						<span className={styles.mainHeadingColor}>Bula Hookah</span> Lounge
 					</Typography>
 					<Typography variant="body1" className={styles.headingSlogan}>
