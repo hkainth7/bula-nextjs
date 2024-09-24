@@ -1,0 +1,33 @@
+.contactPage {
+	padding: 2rem;
+}
+
+.heading {
+	margin-bottom: 1.5rem;
+}
+
+.contactInfo {
+	margin-top: 1rem;
+}
+
+.link {
+	color: #0077cc;
+	transition: color 0.3s ease;
+}
+
+.link:hover {
+	color: #005fa3;
+}
+
+.divider {
+	background-color: #497445;
+}
+
+@media only screen and (min-width: 600px) {
+	.contactPage {
+		flex-direction: row;
+	}
+	.divider {
+		width: 1px;
+	}
+}

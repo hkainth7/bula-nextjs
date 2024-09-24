@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography, Divider } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import aboutContent from "./aboutContent.json";
 import Image from "next/image";
 import AboutBanner from "@/public/assets/about-banner.jpg";

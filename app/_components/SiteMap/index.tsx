@@ -9,6 +9,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import styles from "./sitemap.module.css";
+import { SocialLinks } from "../SocialLinks";
 
 const SiteMap = () => {
 	const linkData = [
@@ -61,19 +62,7 @@ const SiteMap = () => {
 					<Typography variant="h3" className={styles.headings}>
 						Follow Our Socials:
 					</Typography>
-					<Stack direction="row" alignItems="center">
-						{linkData.map((link, index) => (
-							<Link href={link.href} key={index}>
-								{link.icon}
-							</Link>
-						))}
-						<Link
-							href="https://youtube.com/@bulahookahlounge?si=-PkGPD7CmQ_NOf4a"
-							className={styles.tikTokIcon}
-						>
-							<TikTokIcon color={"#497445"} />
-						</Link>
-					</Stack>
+					<SocialLinks />
 				</Stack>
 				<Stack>
 					<Typography variant="h3" className={styles.headings}>
