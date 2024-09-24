@@ -3,7 +3,6 @@ import { Box, Stack, Typography } from "@mui/material";
 import aboutContent from "./aboutContent.json";
 import Image from "next/image";
 import AboutBanner from "@/public/assets/about-banner.jpg";
-import OutdoorBula from "@/public/assets/bula-lounge-outdoor.jpg";
 import styles from "./about.module.css";
 import Link from "next/link";
 
@@ -51,24 +50,6 @@ const About = () => {
 					priority={true}
 					className={styles.bannerImage}
 				/>
-				<Stack className={styles.contentContainer} alignItems="center">
-					<Stack>
-						<Typography variant="h2" className={styles.journeyTitle}>
-							{aboutContent.ourJourney}
-						</Typography>
-						<Box className={styles.journeyContentContainer}>
-							<Typography className={styles.ourJourneyContent}>
-								{aboutContent.ourJourneyContent}
-							</Typography>
-						</Box>
-					</Stack>
-					<Image
-						src={OutdoorBula}
-						alt="bula entrance"
-						className={styles.outdoorImage}
-						layout="responsive"
-					/>
-				</Stack>
 				<Stack className={styles.contentBox} gap={2}>
 					{aboutContentData.map((data, index) => (
 						<Box className={styles.infoContainer} key={index}>
