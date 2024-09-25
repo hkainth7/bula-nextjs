@@ -28,14 +28,12 @@
 }
 
 .bannerContentBox {
-	padding: 8px;
-	height: 100%;
+	padding: 12px;
 }
 
 .content {
 	font-size: 20px;
 	line-height: 1.6;
-	padding: 4px;
 }
 
 .customTitle {
@@ -46,10 +44,6 @@
 
 .contentContainer {
 	width: 100%;
-}
-
-.bannerContainer {
-	text-align: center;
 }
 
 .infoContainer {
@@ -67,6 +61,10 @@
 .contentTitle {
 	margin-bottom: 15px;
 	font-size: 1.75rem;
+}
+
+.cta {
+	font-size: 18px;
 }
 
 @media only screen and (min-width: 800px) {

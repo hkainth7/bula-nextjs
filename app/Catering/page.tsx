@@ -4,6 +4,7 @@ import cateringContent from "./cateringContent.json";
 import Image from "next/image";
 import HookahModel from "@/public/assets/hookah-model.jpg";
 import styles from "./catering.module.css";
+import { SocialLinks } from "../_components/SocialLinks";
 
 interface CateringContentData {
 	title: string;
@@ -41,15 +42,19 @@ const Catering = () => {
 					Bula Hookah Lounge: A Premier Hookah{" "}
 					<span className={styles.spanColor}>Catering Service</span>{" "}
 				</Typography>
-				<Stack className={styles.bannerContainer} alignItems="center">
-					<Box className={styles.bannerContentBox}>
+				<Stack className={styles.bannerContainer}>
+					<Stack className={styles.bannerContentBox} gap={4}>
 						<Typography variant="h3" className={styles.title}>
 							{cateringContent.tagline}
 						</Typography>
 						<Typography className={styles.content}>
 							{cateringContent.taglineContent}
 						</Typography>
-					</Box>
+						<Stack direction="row" alignItems="center">
+							<Typography className={styles.cta}>Enquire now:</Typography>
+							<SocialLinks />
+						</Stack>
+					</Stack>
 					<Box>
 						<Image
 							src={HookahModel}
