@@ -51,7 +51,7 @@ const Catering = () => {
 							{cateringContent.taglineContent}
 						</Typography>
 						<Stack direction="row" alignItems="center">
-							<Typography className={styles.cta}>Enquire now:</Typography>
+							<Typography className={styles.cta}>Inquire now:</Typography>
 							<SocialLinks />
 						</Stack>
 					</Stack>
