@@ -10,11 +10,11 @@ export const linkData: LinkData[] = [
 		title: "Catering",
 	},
 	{
-		href: "/About",
+		href: "/AboutUs",
 		title: "About",
 	},
 	{
-		href: "/Contact",
+		href: "/ContactUs",
 		title: "Contact",
 	},
 ];
