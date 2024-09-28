@@ -3,9 +3,9 @@
 }
 
 .mainTitle {
-	margin: 10px 0;
+	margin-top: 60px;
 	font-weight: bold;
-	padding: 8px;
+	padding: 20px;
 	font-size: 3rem;
 }
 
@@ -15,7 +15,7 @@
 
 .bannerImage {
 	opacity: 0.4;
-	width: 400px;
+	width: 100%;
 	height: auto;
 }
 
@@ -25,6 +25,10 @@
 }
 .titleContainer {
 	text-align: center;
+}
+
+.bannerContainer {
+	margin: 60px 0;
 }
 
 .bannerContentBox {
@@ -48,14 +52,13 @@
 
 .infoContainer {
 	border: 2px solid #497445;
-	padding: 16px 8px;
+	padding: 20px 15px;
 	border-radius: 4px;
 }
 
 .contentBox {
 	text-align: center;
 	padding: 18px 12px;
-	flex-wrap: wrap;
 }
 
 .contentTitle {
@@ -85,12 +88,15 @@
 	}
 	.bannerContainer {
 		flex-direction: row;
-		align-items: flex-start;
 		text-align: left;
 	}
 
 	.bannerContentBox {
 		height: 100%;
+	}
+
+	.bannerImage {
+		width: 400px;
 	}
 }
 

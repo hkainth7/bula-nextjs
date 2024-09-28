@@ -77,16 +77,6 @@ const Catering = () => {
 						</Typography>
 					</Stack>
 				</Box>
-				<Stack className={styles.contentBox} gap={2}>
-					{cateringContentData.map((data, index) => (
-						<Box className={styles.infoContainer} key={index}>
-							<Typography className={styles.contentTitle} variant="h3">
-								{data.title}
-							</Typography>
-							<Typography className={styles.content}>{data.content}</Typography>
-						</Box>
-					))}
-				</Stack>
 			</Stack>
 		</main>
 	);
