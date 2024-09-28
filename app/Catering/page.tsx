@@ -44,9 +44,6 @@ const Catering = () => {
 				</Typography>
 				<Stack className={styles.bannerContainer}>
 					<Stack className={styles.bannerContentBox} gap={4}>
-						<Typography variant="h3" className={styles.title}>
-							{cateringContent.tagline}
-						</Typography>
 						<Typography className={styles.content}>
 							{cateringContent.taglineContent}
 						</Typography>
