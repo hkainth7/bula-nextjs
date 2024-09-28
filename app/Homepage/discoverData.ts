@@ -16,7 +16,7 @@ export const discoverData = [
 		content:
 			"At Bula Hookah Lounge, we offer a wide range of hookah flavors to suit every taste. Whether you’re in the mood for something fruity or bold, our carefully curated selection promises an exceptional smoking experience",
 		imgSrc: ExperienceImage,
-		href: "/Contact",
+		href: "/ContactUs",
 		linkText: "Contact us...",
 	},
 	{
@@ -24,7 +24,7 @@ export const discoverData = [
 		content:
 			"Discover the vibe at Bula Hookah Lounge, where premium hookahs meet a laid-back atmosphere. Learn more about our story and what makes us the perfect spot to unwind",
 		imgSrc: WhoWeAre,
-		href: "/About",
+		href: "/AboutUs",
 		linkText: "Read more about us...",
 	},
 ];
