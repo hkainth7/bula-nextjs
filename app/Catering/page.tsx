@@ -5,32 +5,9 @@ import Image from "next/image";
 import HookahModel from "@/public/assets/hookah-model.jpg";
 import styles from "./catering.module.css";
 import { SocialLinks } from "../_components/SocialLinks";
-
-interface CateringContentData {
-	title: string;
-	content: string;
-}
+import HookahPackages from "./HookahPackages";
 
 const Catering = () => {
-	const cateringContentData: CateringContentData[] = [
-		{
-			title: cateringContent.customizablePackage,
-			content: cateringContent.customizablePackageContent,
-		},
-		{
-			title: cateringContent.exceptionalExperience,
-			content: cateringContent.exceptionalExperienceContent,
-		},
-		{
-			title: cateringContent.customerService,
-			content: cateringContent.customerServiceContent,
-		},
-		{
-			title: cateringContent.howItWorks,
-			content: cateringContent.howItWorksContent,
-		},
-	];
-
 	return (
 		<main className={styles.mainContainer}>
 			<Stack alignItems="center" gap={3}>
@@ -61,7 +38,7 @@ const Catering = () => {
 						/>
 					</Box>
 				</Stack>
-				<Box>
+				<Box sx={{ padding: "14px" }}>
 					<Stack gap={2} className={styles.titleContainer}>
 						<Typography variant="h3" className={styles.title}>
 							{cateringContent.hookahMenu}
@@ -69,10 +46,19 @@ const Catering = () => {
 						<Typography className={styles.content}>
 							{cateringContent.hookahMeuContent}
 						</Typography>
-						<Typography className={styles.customTitle}>
-							{cateringContent.customFlavours}
-						</Typography>
 					</Stack>
+					<Box sx={{ marginTop: "100px" }}>
+						<Typography
+							variant="h4"
+							sx={{ fontSize: "1.35em", marginBottom: "5px" }}
+						>
+							Flip through our packages below to plan your next get together
+						</Typography>
+						<Typography variant="caption">
+							* All packages are subject to gratiuity and tax
+						</Typography>
+						<HookahPackages />
+					</Box>
 				</Box>
 			</Stack>
 		</main>
