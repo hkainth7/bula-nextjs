@@ -23,7 +23,7 @@ function TabPanel(props: TabPanelProps) {
 			aria-labelledby={`vertical-tab-${index}`}
 			{...other}
 		>
-			{value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+			{value === index && <Box className={styles.tabPanel}>{children}</Box>}
 		</div>
 	);
 }
@@ -58,7 +58,6 @@ export default function HookahPackages() {
 					TabIndicatorProps={{
 						style: { backgroundColor: "#497445" },
 					}}
-					className={styles.customTabs}
 				>
 					<StyledTab label="Classic" {...a11yProps(0)} />
 					<StyledTab label="Premium" {...a11yProps(1)} />

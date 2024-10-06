@@ -11,11 +11,7 @@ const Catering = () => {
 	return (
 		<main className={styles.mainContainer}>
 			<Stack alignItems="center" gap={3}>
-				<Typography
-					variant="h1"
-					textAlign="center"
-					className={styles.mainTitle}
-				>
+				<Typography variant="h1" className={styles.mainTitle}>
 					Bula Hookah Lounge: A Premier Hookah{" "}
 					<span className={styles.spanColor}>Catering Service</span>{" "}
 				</Typography>
@@ -38,7 +34,7 @@ const Catering = () => {
 						/>
 					</Box>
 				</Stack>
-				<Box sx={{ padding: "14px" }}>
+				<Box className={styles.menuContainer}>
 					<Stack gap={2} className={styles.titleContainer}>
 						<Typography variant="h3" className={styles.title}>
 							{cateringContent.hookahMenu}
@@ -47,11 +43,8 @@ const Catering = () => {
 							{cateringContent.hookahMeuContent}
 						</Typography>
 					</Stack>
-					<Box sx={{ marginTop: "100px" }}>
-						<Typography
-							variant="h4"
-							sx={{ fontSize: "1.35em", marginBottom: "5px" }}
-						>
+					<Box className={styles.hookahPackagesContainer}>
+						<Typography variant="h4" className={styles.packagesCta}>
 							Flip through our packages below to plan your next get together
 						</Typography>
 						<Typography variant="caption">

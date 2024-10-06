@@ -7,6 +7,7 @@ import PalmTree from "@/public/assets/palmTree.png";
 import { Card, Chip, Divider, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { HookahPackageData } from "../types";
+import styles from "./hookahPackage.module.css";
 
 interface HookahPackageProps {
 	hookahPackage: HookahPackageData;
@@ -15,23 +16,23 @@ interface HookahPackageProps {
 export default function HookahPackage(props: HookahPackageProps) {
 	const { hookahPackage } = props;
 	return (
-		<Box sx={{ width: "100%" }}>
-			<Card variant="outlined" sx={{ backgroundColor: "transparent" }}>
+		<Box className={styles.container}>
+			<Card variant="outlined" className={styles.card}>
 				<Box>
 					<Chip
 						size="small"
 						label={hookahPackage.chipTitle}
 						variant="outlined"
-						sx={{ color: "white", marginBottom: "20px" }}
+						className={styles.chip}
 					/>
-					<Typography sx={{ color: "white" }} variant="h3">
+					<Typography className={styles.title} variant="h3">
 						{hookahPackage.title}
 					</Typography>
-					<Typography variant="body2" sx={{ color: "#ccc", marginY: "20px" }}>
+					<Typography variant="body2" className={styles.description}>
 						{hookahPackage.description}
 					</Typography>
 				</Box>
-				<Divider sx={{ backgroundColor: "#497445", marginY: "10px" }} />
+				<Divider className={styles.divider} />
 				<List>
 					<Stack gap={2}>
 						{hookahPackage.listItems.map((item, index) => (
@@ -40,16 +41,16 @@ export default function HookahPackage(props: HookahPackageProps) {
 									src={PalmTree}
 									alt="palm tree"
 									width={30}
-									style={{ margin: "0 10px" }}
+									className={styles.image}
 								/>
-								<ListItemText primary={item} sx={{ color: "white" }} />
+								<ListItemText primary={item} className={styles.listItemText} />
 							</ListItem>
 						))}
 					</Stack>
 				</List>
-				<Divider sx={{ backgroundColor: "#497445", marginY: "10px" }} />
-				<Box sx={{ textAlign: "right", padding: "4px" }}>
-					<Typography sx={{ mr: "auto", color: "white", fontSize: "1.30em" }}>
+				<Divider className={styles.divider} />
+				<Box className={styles.priceContainer}>
+					<Typography className={styles.price}>
 						{hookahPackage.price}
 					</Typography>
 				</Box>

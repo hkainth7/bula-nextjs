@@ -7,6 +7,7 @@
 	font-weight: bold;
 	padding: 20px;
 	font-size: 3rem;
+	text-align: center;
 }
 
 .spanColor {
@@ -68,6 +69,19 @@
 
 .cta {
 	font-size: 18px;
+}
+
+.menuContainer {
+	padding: 14px;
+}
+
+.hookahPackagesContainer {
+	margin-top: 100px;
+}
+
+.packagesCta {
+	font-size: 1.35em;
+	margin-bottom: 5px;
 }
 
 @media only screen and (min-width: 800px) {
