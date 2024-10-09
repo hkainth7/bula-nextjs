@@ -16,11 +16,13 @@ const OPTIONS: EmblaOptionsType = { loop: true };
 const dela = Dela_Gothic_One({
 	weight: ["400"],
 	subsets: ["latin"],
+	display: "swap",
 });
 
 const robSlab = Roboto_Slab({
 	weight: ["400"],
 	subsets: ["latin"],
+	display: "swap",
 });
 
 const Homepage = () => {

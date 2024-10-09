@@ -10,6 +10,7 @@ import { Stack } from "@mui/material";
 const roboto = Roboto({
 	weight: "400",
 	subsets: ["latin"],
+	display: "swap",
 });
 
 export const viewport: Viewport = {
