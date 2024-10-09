@@ -87,7 +87,13 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<script key="structured-data" type="application/ld+json" />
+				<script
+					key="structured-data"
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{
+						__html: JSON.stringify(structuredData),
+					}}
+				/>
 			</head>
 			<body>
 				<Stack
