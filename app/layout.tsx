@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 			"Bula Hookah Lounge offers a unique new experience, sharing unique fijian shisha flavours",
 		images: [
 			{
-				url: "@/public/assets/logo.png",
+				url: "https://www.bulalounge.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhite-logo.e9f136b7.png&w=256&q=75",
 				width: 800,
 				height: 600,
 				alt: "Og Image Alt",
@@ -47,7 +47,9 @@ export const metadata: Metadata = {
 		title: "Bula Lounge",
 		description:
 			"Bula Hookah Lounge offers a unique new experience, sharing unique fijian shisha flavours",
-		images: { url: "https://bulalounge.com/logo.png./" },
+		images: {
+			url: "https://www.bulalounge.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhite-logo.e9f136b7.png&w=256&q=75",
+		},
 	},
 };
 
