@@ -54,6 +54,31 @@ export const metadata: Metadata = {
 	},
 };
 
+const structuredData = {
+	"@context": "https://schema.org",
+	"@type": "LocalBusiness",
+	name: "Bula Hookah Lounge",
+	url: "https://www.bulalounge.com",
+	logo: "https://www.bulalounge.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwhite-logo.e9f136b7.png&w=256&q=75",
+	description:
+		"Step into Bula Hookah Lounge, where unforgettable moments await. Relax, unwind, and elevate your experience with our carefully crafted Shisha. Happiness is just a puff away!",
+	telephone: "+1-236-558-3099",
+	address: {
+		"@type": "PostalAddress",
+		streetAddress: "4027 Hastings St",
+		addressLocality: "Burnaby",
+		addressRegion: "BC",
+		postalCode: "V5C 2J2", // Include this if you have it
+		addressCountry: "Canada",
+	},
+	openingHours: ["Sun-Tue 18:30-00:30", "Fri-Sat 18:30-02:30"],
+	sameAs: [
+		"https://www.instagram.com/bulahookahlounge?igsh=MTMzengydnk2MXFiNw==",
+		"https://www.facebook.com/bulahookahlounge",
+		"https://youtube.com/@bulahookahlounge?si=-PkGPD7CmQ_NOf4a",
+	],
+};
+
 export default function RootLayout({
 	children,
 }: Readonly<{
@@ -61,6 +86,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<script key="structured-data" type="application/ld+json" />
+			</head>
 			<body>
 				<Stack
 					justifyContent={"space-between"}

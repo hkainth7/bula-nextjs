@@ -1,10 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
-import Link from "next/link";
 import React from "react";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import { TikTokIcon } from "./TikTokIcon";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
@@ -12,21 +7,6 @@ import styles from "./sitemap.module.css";
 import { SocialLinks } from "../SocialLinks";
 
 const SiteMap = () => {
-	const linkData = [
-		{
-			href: "https://www.instagram.com/bulahookahlounge?igsh=MTMzengydnk2MXFiNw==",
-			icon: <InstagramIcon fontSize="large" className={styles.icon} />,
-		},
-		{
-			href: "https://youtube.com/@bulahookahlounge?si=-PkGPD7CmQ_NOf4a",
-			icon: <YouTubeIcon fontSize="large" className={styles.icon} />,
-		},
-		{
-			href: "https://youtube.com/@bulahookahlounge?si=-PkGPD7CmQ_NOf4a",
-			icon: <FacebookIcon fontSize="large" className={styles.icon} />,
-		},
-	];
-
 	const infoData = [
 		{
 			icon: <MailOutlineIcon />,
