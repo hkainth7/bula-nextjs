@@ -1,6 +1,7 @@
 .link {
 	text-decoration: none;
 	color: white;
+	font-size: 20px;
 }
 
 .menuButton {
@@ -10,4 +11,10 @@
 .menuRoot {
 	background-color: #2f3135;
 	padding: 0;
+	width: 200px;
+}
+
+.menuItem {
+	justify-content: flex-end;
+	padding: 10px 18px;
 }

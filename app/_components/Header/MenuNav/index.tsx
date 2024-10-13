@@ -54,7 +54,12 @@ const MenuNav = () => {
 				}}
 			>
 				{linkData.map(({ href, title }, index) => (
-					<MenuItem key={index} divider onClick={handleClose}>
+					<MenuItem
+						key={index}
+						divider
+						onClick={handleClose}
+						className={styles.menuItem}
+					>
 						<Link href={href} className={styles.link}>
 							{title}
 						</Link>
