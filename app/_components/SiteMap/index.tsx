@@ -24,7 +24,7 @@ const SiteMap = () => {
 
 	const businessHours = [
 		{
-			content: "Sun - Tue: 6:30PM - 12:30AM",
+			content: "Sun - Thu: 6:30PM - 12:30AM",
 		},
 		{
 			content: "Fri - Sat: 6:30PM to 2:30AM",
