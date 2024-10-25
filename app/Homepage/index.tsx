@@ -63,7 +63,7 @@ const Homepage = () => {
 				<EmblaCarousel options={OPTIONS} />
 			</Stack>
 			<Stack className={styles.discoverContainer}>
-				<Typography className={styles.discoverText}>
+				<Typography className={styles.discoverText} variant="h2">
 					Discover Bula Hookah Lounge
 				</Typography>
 				<Stack

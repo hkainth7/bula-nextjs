@@ -23,11 +23,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
 	title: "Hookah Lounge, Relax and Unwind - Bula Hookah Lounge",
 	description:
-		"Step into Bula Hookah Lounge, where unforgettable moments await. Relax, unwind, and elevate your experience with our carefully crafted Shisha. Happiness is just a puff away!",
+		"Discover Bula Hookah Lounge, the best hookah lounge in Vancouver and Burnaby. Relax with premium Shisha and create unforgettable moments in an inviting atmosphere. Happiness is a puff away!",
 	icons: {
 		icon: "./favicon.ico",
 	},
-	keywords: "hookah, lounge, shisha,",
+	keywords: ["hookah", "lounge", "shisha,"],
 	openGraph: {
 		type: "website",
 		url: "https://bulalounge.com/",
