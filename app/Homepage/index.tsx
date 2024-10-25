@@ -10,6 +10,7 @@ import styles from "./homepage.module.css";
 import Link from "next/link";
 import { Dela_Gothic_One, Roboto_Slab } from "next/font/google";
 import { discoverData } from "./discoverData";
+import { SocialLinks } from "../_components/SocialLinks";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -49,6 +50,9 @@ const Homepage = () => {
 					<Typography variant="body1" className={styles.headingSlogan}>
 						{homepageContent.slogan}
 					</Typography>
+					<Box sx={{ marginTop: "20px" }}>
+						<SocialLinks />
+					</Box>
 				</Stack>
 			</Stack>
 			<Stack alignItems="center" className={styles.captionContainer}>

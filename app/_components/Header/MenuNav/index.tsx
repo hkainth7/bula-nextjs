@@ -2,10 +2,9 @@
 
 import React, { useState } from "react";
 import { Button, Link, Menu, MenuItem } from "@mui/material";
-import Image from "next/image";
-import HookahIcon from "@/public/assets/shishaOriginal.png";
 import { linkData } from "./linkData";
 import styles from "../header.module.css";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const MenuNav = () => {
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -27,13 +26,7 @@ const MenuNav = () => {
 				onClick={handleClick}
 				className={styles.menuButton}
 			>
-				<Image
-					src={HookahIcon}
-					quality={100}
-					height={60}
-					width={0}
-					alt={`hookah`}
-				/>
+				<MenuIcon className={styles.menuIcon} />
 			</Button>
 			<Menu
 				id="basic-menu"
