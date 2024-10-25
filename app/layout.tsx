@@ -21,8 +21,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-	title:
-		"Best Hookah Lounge in Vancouver & Burnaby - Relax at Bula Hookah Lounge",
+	title: "Best Hookah Lounge in Vancouver & Burnaby - Relax at Bula Lounge",
 	description:
 		"Discover Bula Hookah Lounge, the best hookah lounge in Vancouver and Burnaby. Relax with premium Shisha and create unforgettable moments in an inviting atmosphere. Happiness is a puff away!",
 	icons: {
