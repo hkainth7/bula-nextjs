@@ -20,7 +20,7 @@ const Footer = () => {
 				<Typography className={styles.poweredByContainer}>
 					Powered by
 					<Link href={""} className={styles.link}>
-						HKDev
+						NexTier Solutions
 					</Link>
 				</Typography>
 			</Stack>
