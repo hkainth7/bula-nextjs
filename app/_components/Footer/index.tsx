@@ -5,7 +5,6 @@ import styles from "./footer.module.css";
 
 const Footer = () => {
 	const copyrightYear = new Date().getFullYear();
-
 	return (
 		<footer>
 			<Stack
