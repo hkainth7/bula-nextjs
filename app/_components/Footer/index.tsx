@@ -18,7 +18,12 @@ const Footer = () => {
 				</Typography>
 				<Typography className={styles.poweredByContainer}>
 					Powered by
-					<Link href={""} className={styles.link}>
+					<Link
+						href={"https://www.instagram.com/nextiersolutions/"}
+						className={styles.link}
+						rel="noopener noreferrer"
+						target="_blank"
+					>
 						NexTier Solutions
 					</Link>
 				</Typography>
